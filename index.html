@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title> Closet Adventures: Mix & Inspire </title>
+  </head>
+  <body>
+    <header id="header-bar">
+    <h1 id="heading"> Closet Adventures: Mix & Inspire</h1>
+    </header>
+    <main class="layout">
+    
+      <div class="left-buttons">
+        <button onclick="prevHair()">⬅ hair</button>
+        <button onclick="prevTop()">⬅ top</button>
+        <button onclick="prevPants()">⬅ pants</button>
+        <button onclick="prevShoes()">⬅ shoes</button>
+      </div>
+
+      
+      <div class="center-image">
+        <div id="backdrop">
+          <div id="pants" role="img"></div>
+          <div id="hair" role="img"></div>
+          <!-- <div id="girl" role="img" alt></div> -->
+          <div id="shoes" role="img"></div>
+          <div id="top" role="img"></div>
+          <img src="images/character-base.png" id="character-base" alt="Character Base">
+        </div>
+      </div>
+
+      
+      <div class="right-buttons">
+        <button onclick="nextHair()">hair ➡</button>
+        <button onclick="nextTop()">top ➡</button>
+        <button onclick="nextPants()">pants ➡</button>
+        <button onclick="nextShoes()">shoes ➡</button>
+      </div>
+    </main>
+    <script src="./javascript.js"></script>
+  </body>
+

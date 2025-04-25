@@ -1,0 +1,202 @@
+#header-bar {
+  background-color: rgba(255, 88, 174, 0.5); /* semi-transparent pink */
+  padding: 1.5rem 0;
+  width: 100%;
+  text-align: center;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+#heading {
+  margin: 0;
+  font-size: 2.5rem;
+  font-family: 'Marker Felt', fantasy;
+  color: snow;
+  text-shadow: 0px 4px 5px rgb(24, 25, 88);
+}
+
+body {
+  background-color:#A0522D;
+  background-image: url("images/closet7.jpg");
+  background-size:contain;         
+  background-position: center top 100px;      
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  margin: 0;
+  padding: 0;
+}
+
+/* .background-img {
+  position: fixed;
+  top: 100px; /* creates top margin */
+  /* left: 0;
+  width: 100%;
+  height: auto;
+  z-index: -1;
+} */ 
+
+.layout {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  gap: 1rem;
+  align-items: center;
+  justify-items: center;
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 1rem;
+  box-sizing: border-box;
+}
+
+.left-buttons,
+.right-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+  font-family: Impact, fantasy;
+}
+
+/* .left-buttons {
+  background-image: url("images/closet_door.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+  padding: 1rem;
+}
+
+.right-buttons {
+  background-image: url("images/drawer2.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+  padding: 1rem;
+} */
+
+.center-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 100%;
+}
+
+#backdrop {
+  width: 100%;
+  max-width: 400px;
+  aspect-ratio: 2 / 3;
+  position: relative;
+  background-color: rgb(246, 240, 255);
+  border-radius: 20px;
+  position: relative;
+}
+
+#character-base {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+
+#hair {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 8;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+#top {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 6;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+#pants {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 4;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+#shoes {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+/* Buttons */
+button {
+  color: black;
+  background-color: rgb(243, 240, 255);
+  box-shadow: 0px 1px 2px 1px rgb(73, 75, 184);
+  border-radius: 10px;
+  padding: 2em 1.2em;
+  font-size: 1rem;
+  transition: background-color 0.2s, box-shadow 0.2s;
+  min-width: 100px;
+  font-family: Impact, fantasy;
+}
+button:hover {
+  background-color: rgb(248, 252, 255);
+  box-shadow: 0px 2px 4px 1px rgb(73, 75, 184);
+}
+
+
+#heading {
+  text-align: center;
+  font-size: 2rem;
+  color: snow;
+  text-shadow: 0px 4px 5px rgb(24, 25, 88);
+  font-family: marker felt, fantasy;
+  margin-top: 2rem;
+}
+
+/* This was designed desktop-first 😬 Had to use max-width to fix it and make it mobile accessible. */
+@media (max-width: 768px) {
+  .layout {
+    grid-template-columns: 1fr;
+  }
+
+  .left-buttons,
+  .right-buttons {
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+  }
+
+  #backdrop {
+    width: 90vw;
+  }
+
+  button {
+    font-size: 0.9rem;
+    padding: 0.4em 1em;
+  }
+
+}
+
+/* for inspo I used and help with coding I referenced the following githubs:
+https://codepen.io/kristenmay/pen/ZppNeb 
+https://alyssasdaniels.medium.com/making-fit-check-a-javascript-dress-up-game-d38f6edac479
+https://github.com/hazieon/dressupgame?tab=readme-ov-file
+https://github.com/adreejish/Dress-up-game?tab=readme-ov-file */
+
