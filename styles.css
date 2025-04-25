@@ -1,3 +1,31 @@
+
+.skip a{
+  color: black;
+  background: lightpink;
+  left: 0;
+  padding: 6px;
+  /* -webkit-transition: top 1s ease-out; */
+  transition: top 1s ease-out;
+  z-index: 1;
+}
+
+.skip a {
+  position: absolute;
+  top: -50px;
+  overflow: hidden;
+}
+
+
+.skip a:focus{
+  top:20px;
+}
+
+
+*:focus{
+  outline: 2px solid green;
+  border: 2px solid green;
+}
+
 #header-bar {
   background-color: rgba(255, 88, 174, 0.5); /* semi-transparent pink */
   padding: 1.5rem 0;
